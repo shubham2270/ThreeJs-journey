@@ -45,7 +45,7 @@ const scene = new THREE.Scene();
  * Object
  */
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ map: colorTexture });
+const material = new THREE.MeshBasicMaterial({ map: doorColorTexture });
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
