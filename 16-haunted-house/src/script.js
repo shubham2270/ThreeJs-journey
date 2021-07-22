@@ -165,6 +165,16 @@ bush4.position.set(-1, 0.05, 2.6);
 
 house.add(bush1, bush2, bush3, bush4);
 
+// Sphere for skelton
+const skeltonGeometry = new THREE.SphereBufferGeometry(1, 10, 10);
+const skeltonMaterial = new THREE.MeshStandardMaterial({ color: "#ffffff" });
+
+const skelton = new THREE.Mesh(skeltonGeometry, skeltonMaterial);
+skelton.position.set(1.4, 0.1, 2.1);
+skelton.scale.set(0.8, 0.8, 0.8);
+
+scene.add(skelton);
+
 // Graves
 const graves = new THREE.Group();
 scene.add(graves);
@@ -339,6 +349,12 @@ const tick = () => {
     Math.cos(ghost3Angle) * (7 + Math.sin(elapsedTime * 0.32));
   ghost3.position.z = Math.sin(ghost3Angle) * (7 + Math.sin(elapsedTime * 0.5));
   ghost3.position.y = Math.sin(elapsedTime * 4) + Math.sin(elapsedTime * 2.5);
+
+  // Update Skelton
+  const skeltonAngle = elapsedTime * 1.5;
+  skelton.position.x = Math.cos(skeltonAngle) * 4;
+  skelton.position.z = Math.sin(skeltonAngle) * 4;
+  skelton.position.y = Math.sin(skeltonAngle * 2) * 3.5;
 
   // Update controls
   controls.update();
