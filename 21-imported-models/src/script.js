@@ -20,28 +20,25 @@ const scene = new THREE.Scene();
 /**
  * Models
  */
-const dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath("/draco/");
+// const dracoLoader = new DRACOLoader();
+// dracoLoader.setDecoderPath("/draco/");
 const gltfLoader = new GLTFLoader();
-gltfLoader.setDRACOLoader(dracoLoader);
+// gltfLoader.setDRACOLoader(dracoLoader);
 
 let mixer = null;
 
 gltfLoader.load(
-  "/models/Fox/glTF/Fox.gltf",
+  "/models/RoboRacer/glTF/roboracer.gltf",
   (gltf) => {
     // console.log(gltf.scene);
     // const children = [...gltf.scene.children];
     // children.map((child) => {
     //   return scene.add(child);
     // });
+    console.log(gltf);
 
-    mixer = new THREE.AnimationMixer(gltf.scene);
-    const action = mixer.clipAction(gltf.animations[1]);
-    action.play();
-
-    gltf.scene.scale.set(0.025, 0.025, 0.025);
-    scene.add(gltf.scene);
+    // scene.add(gltf.scene);
+    scene.add(gltf.scene.children[0]);
   },
   () => {
     console.log("progress");
@@ -69,10 +66,10 @@ scene.add(floor);
 /**
  * Lights
  */
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+const ambientLight = new THREE.AmbientLight(0xffffff, 1.0);
 scene.add(ambientLight);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
 directionalLight.castShadow = true;
 directionalLight.shadow.mapSize.set(1024, 1024);
 directionalLight.shadow.camera.far = 15;
@@ -87,6 +84,8 @@ scene.add(directionalLight);
  * Sizes
  */
 const sizes = {
+  // width: 800,
+  // height: 500,
   width: window.innerWidth,
   height: window.innerHeight,
 };
@@ -115,7 +114,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   100
 );
-camera.position.set(2, 2, 2);
+camera.position.set(2, 2, 5);
 scene.add(camera);
 
 // Controls

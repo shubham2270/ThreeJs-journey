@@ -1,0 +1,393 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "roborace",
+            "rotation" : [
+                0.5,
+                0.4999999701976776,
+                -0.5000000596046448,
+                0.4999999403953552
+            ],
+            "scale" : [
+                0.016136489808559418,
+                0.016136489808559418,
+                0.016136489808559418
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "wheel",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.7772729992866516
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "small_parts",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0.6863636374473572,
+                "roughnessFactor" : 0.0727272629737854
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "carbon",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicFactor" : 0.30000001192092896,
+                "roughnessFactor" : 0.2545454502105713
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "body",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 3
+                },
+                "metallicFactor" : 0.6772726774215698,
+                "roughnessFactor" : 0.154545396566391
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "roborace",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 2
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13,
+                        "TEXCOORD_0" : 14
+                    },
+                    "indices" : 15,
+                    "material" : 3
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "robocar_wheel_Diffuse",
+            "uri" : "textures/robocar_wheel_Diffuse.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "robocar_small_parts_Diffuse",
+            "uri" : "textures/robocar_small_parts_Diffuse.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "robocar_carbon_Diffuse",
+            "uri" : "textures/robocar_carbon_Diffuse.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "robocar_body_Diffuse",
+            "uri" : "textures/robocar_body_Diffuse.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 96098,
+            "max" : [
+                102.23500061035156,
+                169.98089599609375,
+                -0.29089999198913574
+            ],
+            "min" : [
+                -101.2876968383789,
+                -184.39990234375,
+                -70.84529876708984
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 96098,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 96098,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 398304,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 12467,
+            "max" : [
+                87.76629638671875,
+                213.9709014892578,
+                -20.0575008392334
+            ],
+            "min" : [
+                -87.76629638671875,
+                -167.11720275878906,
+                -101.33889770507812
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 12467,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 12467,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 51510,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 6224,
+            "max" : [
+                101.7510986328125,
+                197.24130249023438,
+                -3.5896999835968018
+            ],
+            "min" : [
+                -101.79019927978516,
+                -234.46299743652344,
+                -47.68600082397461
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 6224,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 6224,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 27714,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 13157,
+            "max" : [
+                99.77439880371094,
+                234.53280639648438,
+                -1.7138999700546265
+            ],
+            "min" : [
+                -99.8134994506836,
+                -234.53280639648438,
+                -85.6937026977539
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 13157,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 13157,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5123,
+            "count" : 59022,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1153176,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1153176,
+            "byteOffset" : 1153176
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 768784,
+            "byteOffset" : 2306352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1593216,
+            "byteOffset" : 3075136
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 149604,
+            "byteOffset" : 4668352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 149604,
+            "byteOffset" : 4817956
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 99736,
+            "byteOffset" : 4967560
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 103020,
+            "byteOffset" : 5067296
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 74688,
+            "byteOffset" : 5170316
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 74688,
+            "byteOffset" : 5245004
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 49792,
+            "byteOffset" : 5319692
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 55428,
+            "byteOffset" : 5369484
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 157884,
+            "byteOffset" : 5424912
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 157884,
+            "byteOffset" : 5582796
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 105256,
+            "byteOffset" : 5740680
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 118044,
+            "byteOffset" : 5845936
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 5963980,
+            "uri" : "roboracer.bin"
+        }
+    ]
+}
